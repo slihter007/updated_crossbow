@@ -1,0 +1,2 @@
+ALTER TABLE `email_queue` ADD `display` TINYINT(1) NULL DEFAULT '1' AFTER `status`;
+UPDATE `email_templates` SET `display` = '0' WHERE `email_templates`.`id` = 4;

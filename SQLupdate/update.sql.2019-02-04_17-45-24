@@ -1,0 +1,10 @@
+INSERT INTO `email_templates` (`relation`, `name`, `subject`, `message`, `from_name`, `status`, `display`) VALUES ('staff', 'customer_forgot_password', 'Reset password', '<h2><span>Reset password</span></h2><p>Hi {customer},</p><p><br>Forgot your password?<br>To create a new password, just follow this link:<br><br><a href=\"{password_url}\" data-mce-href=\"{password_url}\">Reset Password</a><br><br>You received this email, because it was requested by a user. This is part of the procedure to create a new password on the system. If you DID NOT request a new password then please ignore this email and your password will remain the same. <br></p><p>Regards,</p><p>{email_signature}<br></p>', 'Ciuis CRM', '1', '1');
+
+INSERT INTO `email_templates` (`relation`, `name`, `subject`, `message`, `from_name`, `status`, `display`) VALUES ('staff', 'customer_password_reset', 'Your password has been changed', '<p><span><strong>You have changed your password.<br></strong></span><br>Please, keep it in your records so you don\'t forget it.<br><br>Your email address for login is: <span style=\"color: rgb(0, 0, 255)\">{email}</span><br><br>If this was not you, please contact us.<br></p><p>Regards,<br>{email_signature}<br></p>', 'Ciuis CRM', '1', '1');
+
+INSERT INTO `email_template_fields` (`template_id`, `field_name`, `field_value`) VALUES ('43', 'customer', 'customer');
+INSERT INTO `email_template_fields` (`template_id`, `field_name`, `field_value`) VALUES ('43', 'password_url', 'password_url');
+INSERT INTO `email_template_fields` (`template_id`, `field_name`, `field_value`) VALUES ('43', 'email_signature', 'email_signature');
+INSERT INTO `email_template_fields` (`template_id`, `field_name`, `field_value`) VALUES ('44', 'email', 'email');
+INSERT INTO `email_template_fields` (`template_id`, `field_name`, `field_value`) VALUES ('44', 'password_url', 'password_url');
+INSERT INTO `email_template_fields` (`template_id`, `field_name`, `field_value`) VALUES ('44', 'email_signature', 'email_signature');
